@@ -1,0 +1,8 @@
+var1=int(input("Enter the first number"))
+var2=int(input("Enter the second number"))
+print("The sum is:", var1 + var2)
+print("The difference is", var1 - var2)
+print("The product is", var1 * var2)
+print("The quotient is", var1 / var2)
+print("The remainder is", var1 % var2) 
+print("The floor division is", var1 // var2)
