@@ -1,7 +1,13 @@
-num1=input("Enter the first number ")
-num2=input("Enter the second number ")
+def convertion(num1,num2):
+    intnum1=int(num1)
+    intnum2=int(num2)
+    return (intnum1 + intnum2)
 
-numint1=int(num1)
-numint2=int(num2)
+def main():
+    
+    num1=input("Enter the first number ")
+    num2=input("Enter the second number ")
 
-print("sum = ",numint1 + numint2)
+    print(f"sum = {convertion(num1,num2)}")
+
+main()
