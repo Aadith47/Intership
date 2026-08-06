@@ -1,6 +1,11 @@
-num = int(input("Enter a number: "))
+def multiple_of_two():
 
-if num % 2 == 0:
-    print(num, "is a multiple of 2")
-else:
-    print(num, "is not a multiple of 2")
+    num = int(input("Enter a number: "))
+
+    if num % 2 == 0:
+        print(num, "is a multiple of 2")
+
+    else:
+        print(num, "is not a multiple of 2")
+
+multiple_of_two()
