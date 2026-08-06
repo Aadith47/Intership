@@ -1,8 +1,10 @@
-num=int(input("Enter the number"))
+def factorial():
+    num=int(input("Enter the number:"))
+    factorial=1
 
-factorial=1
+    for i in range(1, num+1):
+     factorial=factorial*i
 
-for i in range(1, num+1):
-    factorial=factorial*i
+    print("Factorial is ", factorial)
 
-print("Factorial is ", factorial)
+factorial()
