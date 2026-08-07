@@ -1,13 +1,12 @@
 def even(num):
-    
-    result=num % 2 == 0
-    return result
+    return num % 2 == 0
 
 def main():
 
-    num=int(input("Enter the number"))
+    num=float(input("Enter the number:"))
+    result=even(num)
 
-    if even(num):
+    if result:
         print("Even")
  
     else:
