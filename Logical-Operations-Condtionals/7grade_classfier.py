@@ -19,4 +19,5 @@ def main():
 
     else:
         print("F")
+        
 main()
