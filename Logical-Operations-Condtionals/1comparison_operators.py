@@ -9,7 +9,7 @@ def main():
     elif num1 < num2:
         print("First one smaller")
 
-    elif num1 == num2:
+    else:
         print("Same number")
 
 main()
