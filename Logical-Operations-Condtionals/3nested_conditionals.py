@@ -13,11 +13,14 @@ def main():
     side2=float(input("Enter second side: "))
     side3=float(input("Enter third side: "))
 
-    if equilateral(side1,side2,side3):
+    equilateral1=equilateral(side1,side2,side3)
+    isosceles1=isosceles(side1,side2,side3)
+
+    if equilateral1:
         print("Triange is Equilateral")
 
-    elif isosceles(side1,side2,side3):
-        print("isosceles")
+    elif isosceles1:
+        print("Triange is isosceles")
 
     else:
         print("Scalene")
