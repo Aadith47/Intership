@@ -1,6 +1,6 @@
 def anagram_checker(string1, string2):
-    letters1=sorted(string1)
-    letters2=sorted(string2)
+    letters1=sorted(string1.lower())
+    letters2=sorted(string2.lower())
 
     if letters1==letters2:
         return "anagram"
