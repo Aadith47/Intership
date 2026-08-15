@@ -1,10 +1,14 @@
-def main():
+fruits = ["apple", "orange", "blueberry"]
 
-    fruits=["apple","orange","blueberry"]
-    fruit=(input("Enter a fruit: "))
+def fruit_appending(fruit):
     fruits.append(fruit)
-    new_fruits=fruits.pop(1)
-    print(f"removed fruit={new_fruits}")
+    removed_fruit = fruits.pop(1)
+    return removed_fruit
+
+def main():
+    fruit = input("Enter a fruit: ")
+    removed_fruit = fruit_appending(fruit)
+    print(f"Removed fruit={removed_fruit}")
     print(f"Fruits={fruits}")
 
 main()
