@@ -3,8 +3,15 @@ list2 = [2, 3, 6, 7, 8]
 
 duplicate_items = []
 
-for i in list1:
-    if i in list2:
-        duplicate_items.append(i)
+def set_operation():
 
-print(duplicate_items)
+    for i in list1:
+        if i in list2:
+            duplicate_items.append(i)
+    return duplicate_items
+def main():
+
+    result1=set_operation()
+    print(result1)
+
+main()
