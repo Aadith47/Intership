@@ -1,6 +1,5 @@
-def main():
+def palindrome(list1):
 
-    list1=input("Enter the string: ")
     list2=list1[::-1]
 
     if list1[0] == list2[0]:
@@ -9,4 +8,12 @@ def main():
     else:
         print("False")
 
+
+def main():
+
+    list1=input("Enter the string: ")
+
+    palindrome(list1)
+
 main()
+
