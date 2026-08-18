@@ -3,6 +3,7 @@ list2 = [2, 3, 6, 7, 8]
 
 duplicate_items = []
 
+
 def set_operation():
 
     for i in list1:
