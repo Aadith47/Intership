@@ -1,0 +1,10 @@
+file = open("textfile.txt","w")
+file.write("Good ")
+file.write("morning ")
+file.write("everyone")
+file.close()
+
+file = open("textfile.txt","r")
+contents = file.read()
+print(contents)
+file.close()
