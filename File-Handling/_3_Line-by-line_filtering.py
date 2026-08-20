@@ -1,14 +1,27 @@
-file = open("textfile.txt","r")
-contents = file.read()
-file.close()
-
 count = 0
-search_element = input("Enter the word to searched:")
+def search(search_element):
+    file = open("textfile.txt","r")
+    contents = file.read()
+    file.close()
 
-words = contents.split()
+    words = contents.split()
+    count = 0
 
-for word in words:
-    if word == search_element:
-        count += 1
+    for word in words:
+        if word == search_element:
+            count += 1
+    return count
 
-print(f"The word {search_element} is repeating {count} times")
+def main():
+
+    search_element = input("Enter the word to searched: ")
+    repeatation = search(search_element)
+
+    if repeatation == 0:
+        print(f"The file does not contain the word {search_element} ")
+        
+    else:
+        print(f"The word {search_element} is repeating {repeatation} time")
+
+
+main()
