@@ -12,7 +12,6 @@ def file_read():
     return items
 
 def main():
-
     contents = file_read()
     print(f"The contents in the file: {contents}")
 

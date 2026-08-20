@@ -1,8 +1,7 @@
 count = 0
 def search(search_element):
-    file = open("textfile.txt","r")
-    contents = file.read()
-    file.close()
+    with open("textfile.txt", "r") as file:
+        contents = file.read()
 
     words = contents.split()
     count = 0
@@ -13,7 +12,6 @@ def search(search_element):
     return count
 
 def main():
-
     search_element = input("Enter the word to searched: ")
     repeatation = search(search_element)
 
@@ -22,6 +20,5 @@ def main():
         
     else:
         print(f"The word {search_element} is repeating {repeatation} time")
-
 
 main()
