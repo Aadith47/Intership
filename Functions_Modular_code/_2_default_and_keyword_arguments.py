@@ -1,10 +1,9 @@
-def greet():
-    return "Hi"
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}"
 
 def main():
-
-    name=input("Enter your name: ")
-    result1=greet()
-    print(f"{result1} {name}")
+    
+    print(greet("Sam"))
+    print(greet("Sam", greeting="Hi"))
 
 main()
