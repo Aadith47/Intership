@@ -5,8 +5,15 @@ def fibonacci(num):
 
 def main():
 
-    num=int(input("Enter the number: "))
-    fibonacci_number=fibonacci(num)
-    print(f"The nth fibonacci number of {num} is {fibonacci_number}")
+    while True:
+
+        try:
+            num=int(input("Enter the number: "))
+            fibonacci_number=fibonacci(num)
+            print(f"The nth fibonacci number of {num} is {fibonacci_number}")
+
+        except:
+ 
+            print("Please type a valid input")
     
 main()
